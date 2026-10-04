@@ -1,3 +1,49 @@
-# 3DCP automatic boundary labels
+# 3DCP 레이어 경계 검출
 
-252 supplied concrete photographs with automatically connected boundary overlays. Labels are unverified pseudo-labels, not model predictions. Compare original / previous / latest labels in the gallery. Data 2/4 labels may be redetected from image features; the gallery records the active version and unresolved images. Amber evidence view highlights weak image support.
+업데이트: 2026-10-04
+
+실제 3D 프린팅 콘크리트 사진에서 층 사이 경계를 찾는 프로젝트다. 원본 사진에 자동으로 경계를 표시하고, 원본–경계 mask 쌍으로 AI를 학습한 뒤 다른 사진에서 결과를 확인한다.
+
+**현재 본 학습은 완료됐다.** 56 epoch에서 조기 종료했으며, 검증 loss 기준 최적 모델은 **46 epoch**다. 같은 검증 사진과 자동 라벨에서 F1은 첫 1 epoch의 **49.46% → 72.05%**로 높아졌다. 사람이 확정한 실제 경계 정확도나 새로운 실험에서의 성능을 입증한 점수는 아니다.
+
+- [AI 결과 보기](https://nanoigajoa.github.io/3dcp-layer-labels/model-results/): 자동 라벨 → 1 epoch → 46 epoch를 사진마다 한 줄로 비교한다.
+- [자동 라벨 갤러리](https://nanoigajoa.github.io/3dcp-layer-labels/): 원본·변경 전·최신 라벨·약한 근거를 비교한다.
+- [About · 진행 과정](https://nanoigajoa.github.io/3dcp-layer-labels/model-results/about.html): 이 README의 진행 과정을 기준으로 생성한다.
+
+## 데이터와 역할
+
+| 구분 | 사진 수 | 사용 방식 |
+|---|---:|---|
+| 제공된 원본 | 252 | Data 1~6의 실제 콘크리트 사진 |
+| 판단 보류 | 5 | 경계가 애매하거나 보이지 않아 이번 학습·평가에서 제외 |
+| 학습 | 121 | Data 1+3, Data 5+6. 모델 가중치 조정에 사용 |
+| 검증 | 89 | Data 2. 모델 선택과 점수·예측 확인에 사용 |
+| 보류 | 37 | Data 4. 모델 학습·검증·예측에 사용하지 않음 |
+
+학습·검증·보류 합계는 247장이다. 갤러리에는 판단 보류 5장을 포함한 원래 252장 모두 남겨두었다. 폴더는 확인된 독립 실험을 뜻하지 않는다. 장면 유사성 때문에 Data 1+3과 Data 5+6을 보수적으로 묶은 잠정 그룹이다.
+
+## 진행 과정
+
+### 1. 원본 사진 확인
+
+Data 1~6의 252장을 읽고 이미지가 열리는지, 해상도와 중복, 밝기와 표면 차이를 확인했다. 받은 원본은 그대로 보존했다. 현재 사진은 1025×1025이며 촬영·가공 이력과 실험 출처는 아직 충분히 확인되지 않았다.
+
+### 2. 층 사이 경계 자동 표시
+
+층 사이의 어두운 홈과 주변 밝기 차이를 이용해 경계 후보를 찾고, 끊긴 후보를 연결했다. 원본 위에 빨간 선을 얹은 그림은 사람이 확인하기 위한 화면이며, 학습 표적은 별도의 흑백 mask다. Data 2는 콘크리트 전체를, Data 4는 앞쪽 하부 벽을 대상으로 원본 특징에서 경계를 다시 찾았다. 현재 라벨 버전은 feature-refined-v4다.
+
+### 3. 애매한 라벨 구분
+
+Data 2의 41·52·54번과 Data 4의 24·25번은 경계를 확실히 판단하기 어려워 이번 학습·평가에서 제외했다. 갤러리에는 이유와 함께 남겼다. 점수가 낮아서 제외한 사진은 아니다. 나머지 라벨도 자동 후보이며 사람이 모두 정답으로 확정한 것은 아니다.
+
+### 4. 학습·검증·보류 분리
+
+같거나 비슷한 장면이 학습과 검증에 섞이지 않도록 잠정 그룹을 유지했다. Data 1+3과 Data 5+6의 121장은 학습, Data 2의 89장은 검증, Data 4의 37장은 보류로 나눴다. Data 4는 라벨 개발 때 이미 확인했으므로 엄격히 보지 않은 독립 test라고 부르지 않는다.
+
+### 5. AI 학습과 최적 모델 선택
+
+빨간 선이 없는 원본 RGB 사진을 AI에 입력하고, 자동 경계 mask를 맞추도록 학습했다. 먼저 1 epoch로 실행을 확인한 뒤 최대 100 epoch와 조기 종료 조건으로 본 학습을 진행했다. Mac GPU 발열을 줄이기 위해 중단·재개와 배치 사이 휴식을 적용했다. 검증 loss가 10 epoch 연속 개선되지 않아 56 epoch에서 끝났고, 가장 낮은 검증 loss를 얻은 46 epoch 모델을 선택했다.
+
+### 6. 같은 사진에서 결과 비교
+
+검증 89장과 대표 학습 사진 12장에 대해 자동 라벨·1 epoch·46 epoch 결과를 나란히 저장했다. 같은 검증 기준에서 F1은 49.46%에서 72.05%로 높아졌고, 81장은 개선됐으며 8장은 하락했다. 누락이 심한 사진과 악화된 사진도 제외하지 않았다. 학습 사진의 예측은 이미 본 장면에서의 결과이므로 일반화 성능으로 해석하지 않는다.
