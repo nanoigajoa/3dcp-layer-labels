@@ -1,6 +1,6 @@
 # 3DCP 레이어 경계 검출
 
-업데이트: 2026-10-04
+업데이트: 2026-10-05
 
 실제 3D 프린팅 콘크리트 사진에서 층 사이 경계를 찾는 프로젝트다. 원본 사진에 자동으로 경계를 표시하고, 원본–경계 mask 쌍으로 AI를 학습한 뒤 다른 사진에서 결과를 확인한다.
 
@@ -9,6 +9,8 @@
 - [AI 결과 보기](https://nanoigajoa.github.io/3dcp-layer-labels/model-results/): 자동 라벨 → 1 epoch → 46 epoch를 사진마다 한 줄로 비교한다.
 - [자동 라벨 갤러리](https://nanoigajoa.github.io/3dcp-layer-labels/): 원본·변경 전·최신 라벨·약한 근거를 비교한다.
 - [About · 진행 과정](https://nanoigajoa.github.io/3dcp-layer-labels/model-results/about.html): 이 README의 진행 과정을 기준으로 생성한다.
+- [자동 후처리·우선 검수 자료](https://nanoigajoa.github.io/3dcp-layer-labels/model-results/): 추가 학습 없이 검증 자동 라벨 F1 **72.05% → 76.05%**. 먼저 확인할 24장과 의심 구간을 자동 선별한 로컬 자료다. 공개 AI 결과 페이지의 네 번째 열에서 기존 모델과 비교할 수 있다.
+- [약한 구간 추가 특징 분석](https://nanoigajoa.github.io/3dcp-layer-labels/weak-features/): 약한 구간이 있는 36장만 분석했다. 원래 약한 중심점의 71.9%에 추가 원본 특징 근거가 있으며, 근거 부족인 약한 선을 표시에서 뺀 별도 후보와 미확정 영역을 보존했다. 학습 라벨을 교체한 결과는 아니다.
 
 ## 데이터와 역할
 

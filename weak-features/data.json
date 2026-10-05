@@ -1,0 +1,588 @@
+{
+  "processed_images": 36,
+  "weak_points": 8743,
+  "supported_points": 6290,
+  "unsupported_points": 2453,
+  "human_approved": false,
+  "rows": [
+    {
+      "id": "Data_5_1__transformed_2",
+      "folder_group": "Data 5_1",
+      "originally_weak_center_pixels": 1031,
+      "original_pixels_supported_by_extra_features": 30,
+      "refined_weak_pixels_still_unsupported": 1001,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        177,
+        0,
+        433,
+        256
+      ]
+    },
+    {
+      "id": "Data_5_1__transformed_3",
+      "folder_group": "Data 5_1",
+      "originally_weak_center_pixels": 227,
+      "original_pixels_supported_by_extra_features": 15,
+      "refined_weak_pixels_still_unsupported": 212,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        194,
+        567,
+        450,
+        823
+      ]
+    },
+    {
+      "id": "Data_1_1__transformed_3",
+      "folder_group": "Data 1_1",
+      "originally_weak_center_pixels": 188,
+      "original_pixels_supported_by_extra_features": 14,
+      "refined_weak_pixels_still_unsupported": 174,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        769,
+        76,
+        1025,
+        332
+      ]
+    },
+    {
+      "id": "Data_3_1__transformed_2",
+      "folder_group": "Data 3_1",
+      "originally_weak_center_pixels": 154,
+      "original_pixels_supported_by_extra_features": 7,
+      "refined_weak_pixels_still_unsupported": 147,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        156,
+        244,
+        412,
+        500
+      ]
+    },
+    {
+      "id": "Data_5_1__transformed_1",
+      "folder_group": "Data 5_1",
+      "originally_weak_center_pixels": 152,
+      "original_pixels_supported_by_extra_features": 13,
+      "refined_weak_pixels_still_unsupported": 139,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        199,
+        612,
+        455,
+        868
+      ]
+    },
+    {
+      "id": "Data_6_1__transformed_1",
+      "folder_group": "Data 6_1",
+      "originally_weak_center_pixels": 118,
+      "original_pixels_supported_by_extra_features": 12,
+      "refined_weak_pixels_still_unsupported": 106,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        607,
+        0,
+        863,
+        256
+      ]
+    },
+    {
+      "id": "Data_5_1__transformed_30",
+      "folder_group": "Data 5_1",
+      "originally_weak_center_pixels": 99,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 99,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        350,
+        0,
+        606,
+        256
+      ]
+    },
+    {
+      "id": "Data_5_1__transformed_27",
+      "folder_group": "Data 5_1",
+      "originally_weak_center_pixels": 100,
+      "original_pixels_supported_by_extra_features": 3,
+      "refined_weak_pixels_still_unsupported": 97,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "Data_1_1__transformed_7",
+      "folder_group": "Data 1_1",
+      "originally_weak_center_pixels": 72,
+      "original_pixels_supported_by_extra_features": 5,
+      "refined_weak_pixels_still_unsupported": 67,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        487,
+        0,
+        743,
+        256
+      ]
+    },
+    {
+      "id": "Data_1_1__transformed_4",
+      "folder_group": "Data 1_1",
+      "originally_weak_center_pixels": 56,
+      "original_pixels_supported_by_extra_features": 1,
+      "refined_weak_pixels_still_unsupported": 55,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        88,
+        48,
+        344,
+        304
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_52",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 2089,
+      "original_pixels_supported_by_extra_features": 2035,
+      "refined_weak_pixels_still_unsupported": 54,
+      "local_feature_shifts": 0,
+      "pair_checks": [
+        {
+          "upper_seed": 667,
+          "lower_seed": 784,
+          "decision": "two_distinct_grooves_supported",
+          "overlap_columns": 1025,
+          "separation_median_px": 121.0,
+          "separator_contrast_median": 68.41964721679688,
+          "two_groove_persistent_coverage": 0.9609756097560975,
+          "upper_support": 0.9804878048780488,
+          "lower_support": 0.9892682926829268,
+          "method": "Two independently supported valleys plus persistent raised separator; no fixed layer pitch"
+        }
+      ],
+      "crop_bounds_xyxy": [
+        769,
+        607,
+        1025,
+        863
+      ]
+    },
+    {
+      "id": "Data_3_1__transformed_9",
+      "folder_group": "Data 3_1",
+      "originally_weak_center_pixels": 58,
+      "original_pixels_supported_by_extra_features": 8,
+      "refined_weak_pixels_still_unsupported": 50,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        0,
+        14,
+        256,
+        270
+      ]
+    },
+    {
+      "id": "Data_6_1__transformed_2",
+      "folder_group": "Data 6_1",
+      "originally_weak_center_pixels": 48,
+      "original_pixels_supported_by_extra_features": 13,
+      "refined_weak_pixels_still_unsupported": 35,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        670,
+        0,
+        926,
+        256
+      ]
+    },
+    {
+      "id": "Data_1_1__transformed_5",
+      "folder_group": "Data 1_1",
+      "originally_weak_center_pixels": 34,
+      "original_pixels_supported_by_extra_features": 1,
+      "refined_weak_pixels_still_unsupported": 33,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        530,
+        0,
+        786,
+        256
+      ]
+    },
+    {
+      "id": "Data_5_1__transformed_5",
+      "folder_group": "Data 5_1",
+      "originally_weak_center_pixels": 26,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 26,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        0,
+        627,
+        256,
+        883
+      ]
+    },
+    {
+      "id": "Data_5_1__transformed_29",
+      "folder_group": "Data 5_1",
+      "originally_weak_center_pixels": 24,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 24,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        259,
+        0,
+        515,
+        256
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_89",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 16,
+      "original_pixels_supported_by_extra_features": 1,
+      "refined_weak_pixels_still_unsupported": 15,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        678,
+        769,
+        934,
+        1025
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_49",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 16,
+      "original_pixels_supported_by_extra_features": 4,
+      "refined_weak_pixels_still_unsupported": 12,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        0,
+        720,
+        256,
+        976
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_35",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 12,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 12,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        692,
+        665,
+        948,
+        921
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_87",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 12,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 12,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "Data_4_1__transformed_5",
+      "folder_group": "Data 4_1",
+      "originally_weak_center_pixels": 17,
+      "original_pixels_supported_by_extra_features": 7,
+      "refined_weak_pixels_still_unsupported": 10,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        769,
+        698,
+        1025,
+        954
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_42",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 10,
+      "original_pixels_supported_by_extra_features": 1,
+      "refined_weak_pixels_still_unsupported": 9,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        15,
+        0,
+        271,
+        256
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_88",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 10,
+      "original_pixels_supported_by_extra_features": 1,
+      "refined_weak_pixels_still_unsupported": 9,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_54",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 2058,
+      "original_pixels_supported_by_extra_features": 2050,
+      "refined_weak_pixels_still_unsupported": 8,
+      "local_feature_shifts": 0,
+      "pair_checks": [
+        {
+          "upper_seed": 868,
+          "lower_seed": 990,
+          "decision": "two_distinct_grooves_supported",
+          "overlap_columns": 1025,
+          "separation_median_px": 120.0,
+          "separator_contrast_median": 42.8633918762207,
+          "two_groove_persistent_coverage": 0.9697560975609756,
+          "upper_support": 0.9951219512195122,
+          "lower_support": 1.0,
+          "method": "Two independently supported valleys plus persistent raised separator; no fixed layer pitch"
+        }
+      ],
+      "crop_bounds_xyxy": [
+        348,
+        676,
+        604,
+        932
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_26",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 8,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 8,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        0,
+        645,
+        256,
+        901
+      ]
+    },
+    {
+      "id": "Data_4_1__transformed_1",
+      "folder_group": "Data 4_1",
+      "originally_weak_center_pixels": 8,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 8,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        769,
+        654,
+        1025,
+        910
+      ]
+    },
+    {
+      "id": "Data_1_1__transformed_1",
+      "folder_group": "Data 1_1",
+      "originally_weak_center_pixels": 6,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 6,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        133,
+        315,
+        389,
+        571
+      ]
+    },
+    {
+      "id": "Data_4_1__transformed_6",
+      "folder_group": "Data 4_1",
+      "originally_weak_center_pixels": 8,
+      "original_pixels_supported_by_extra_features": 3,
+      "refined_weak_pixels_still_unsupported": 5,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        769,
+        705,
+        1025,
+        961
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_10",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 8,
+      "original_pixels_supported_by_extra_features": 4,
+      "refined_weak_pixels_still_unsupported": 4,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        0,
+        769,
+        256,
+        1025
+      ]
+    },
+    {
+      "id": "Data_1_1__transformed_6",
+      "folder_group": "Data 1_1",
+      "originally_weak_center_pixels": 4,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 4,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        37,
+        0,
+        293,
+        256
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_13",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 4,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 4,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        150,
+        748,
+        406,
+        1004
+      ]
+    },
+    {
+      "id": "Data_2_1__transformed_41",
+      "folder_group": "Data 2_1",
+      "originally_weak_center_pixels": 2057,
+      "original_pixels_supported_by_extra_features": 2054,
+      "refined_weak_pixels_still_unsupported": 3,
+      "local_feature_shifts": 0,
+      "pair_checks": [
+        {
+          "upper_seed": 625,
+          "lower_seed": 705,
+          "decision": "two_distinct_grooves_supported",
+          "overlap_columns": 1025,
+          "separation_median_px": 87.0,
+          "separator_contrast_median": 58.71541213989258,
+          "two_groove_persistent_coverage": 1.0,
+          "upper_support": 0.9990243902439024,
+          "lower_support": 1.0,
+          "method": "Two independently supported valleys plus persistent raised separator; no fixed layer pitch"
+        }
+      ],
+      "crop_bounds_xyxy": [
+        733,
+        476,
+        989,
+        732
+      ]
+    },
+    {
+      "id": "Data_4_1__transformed_35",
+      "folder_group": "Data 4_1",
+      "originally_weak_center_pixels": 2,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 2,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "Data_4_1__transformed_7",
+      "folder_group": "Data 4_1",
+      "originally_weak_center_pixels": 2,
+      "original_pixels_supported_by_extra_features": 0,
+      "refined_weak_pixels_still_unsupported": 2,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        0,
+        630,
+        256,
+        886
+      ]
+    },
+    {
+      "id": "Data_5_1__transformed_22",
+      "folder_group": "Data 5_1",
+      "originally_weak_center_pixels": 2,
+      "original_pixels_supported_by_extra_features": 1,
+      "refined_weak_pixels_still_unsupported": 1,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        631,
+        47,
+        887,
+        303
+      ]
+    },
+    {
+      "id": "Data_4_1__transformed_2",
+      "folder_group": "Data 4_1",
+      "originally_weak_center_pixels": 7,
+      "original_pixels_supported_by_extra_features": 7,
+      "refined_weak_pixels_still_unsupported": 0,
+      "local_feature_shifts": 0,
+      "pair_checks": [],
+      "crop_bounds_xyxy": [
+        769,
+        602,
+        1025,
+        858
+      ]
+    }
+  ]
+}
