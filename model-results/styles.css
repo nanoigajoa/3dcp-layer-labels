@@ -9,3 +9,5 @@
 .weak-controls{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.weak-controls button{font:inherit;padding:9px 14px;border:1px solid #d5d8df;border-radius:8px;background:#fff;cursor:pointer}.weak-controls button[aria-pressed=true]{background:#183732;color:white}
 .weak-pair-note{padding:12px 16px;background:#edf5f2;border-radius:8px;line-height:1.6}.weak-page .result-row{scroll-margin-top:110px}.weak-page .reading-guide{flex-wrap:wrap}.weak-page .row-heading{align-items:flex-start}.weak-page .row-score{white-space:normal}
 @media(max-width:700px){.four-panels{min-width:1080px}.site-header{flex-wrap:wrap}.site-header nav{flex-wrap:wrap}.result-strip{flex-wrap:wrap}.result-strip strong{white-space:normal}}
+
+.label-filters{margin:0 0 20px}.feature-note p{margin:8px 0}.feature-note summary{cursor:pointer;font-weight:600}.feature-note details{font-size:12px;line-height:1.8}.label-card .views{line-height:2}.label-card:target{outline:2px solid #92ac83;outline-offset:3px}

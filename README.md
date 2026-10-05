@@ -10,7 +10,7 @@
 - [자동 라벨 갤러리](https://nanoigajoa.github.io/3dcp-layer-labels/): 원본·변경 전·최신 라벨·약한 근거를 비교한다.
 - [About · 진행 과정](https://nanoigajoa.github.io/3dcp-layer-labels/model-results/about.html): 이 README의 진행 과정을 기준으로 생성한다.
 - [자동 후처리·우선 검수 자료](https://nanoigajoa.github.io/3dcp-layer-labels/model-results/): 추가 학습 없이 검증 자동 라벨 F1 **72.05% → 76.05%**. 먼저 확인할 24장과 의심 구간을 자동 선별한 로컬 자료다. 공개 AI 결과 페이지의 네 번째 열에서 기존 모델과 비교할 수 있다.
-- [약한 구간 추가 특징 분석](https://nanoigajoa.github.io/3dcp-layer-labels/weak-features/): 약한 구간이 있는 36장만 분석했다. 원래 약한 중심점의 71.9%에 추가 원본 특징 근거가 있으며, 근거 부족인 약한 선을 표시에서 뺀 별도 후보와 미확정 영역을 보존했다. 학습 라벨을 교체한 결과는 아니다.
+- [자동 라벨·약한 구간 추가 특징](https://nanoigajoa.github.io/3dcp-layer-labels/): 추가 분석 36장의 결과를 해당 사진 카드에 통합했다. ‘추가 특징’과 ‘근거 부족 제외’를 눌러 원본·최신 라벨과 같은 자리에서 비교한다. 원래 약한 중심점의 71.9%에 추가 원본 근거가 있으며, 미확정 영역을 함께 보존한다. 학습 라벨을 교체한 결과는 아니다.
 
 ## 데이터와 역할
 
